@@ -1,0 +1,120 @@
+body.dark {
+  --bg-color:  #2C001E;
+  --text-color: #fff;
+  --card-bg: #0B0210;
+  --header-bg: linear-gradient(135deg, #2C001E, #000000);
+  --header-text: #fff;
+  --accent-color: #fff;
+  --footer-bg: linear-gradient(135deg, #2C001E, #000000);
+  --footer-text: #fff;
+}
+
+body.light {
+  --bg-color: #fff;
+  --text-color: #2C001E;
+  --card-bg: #fff;
+  --header-bg: linear-gradient(135deg, #2C001E, #5E2750);
+  --header-text: #fff;
+  --accent-color: #2C001E;
+  --footer-bg: linear-gradient(135deg, #2C001E, #5E2750);
+  --footer-text: #fff;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", "Segoe UI", sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+  transition: background 0.3s, color 0.3s;
+}
+
+.container {
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+header {
+  background: var(--header-bg);
+  color: var(--header-text);
+  padding: 4rem 1rem 2rem;
+  position: relative;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+.subtitle {
+  margin-top: 0.5rem;
+  font-size: 1.4rem;
+  color: var(--header-text);
+}
+
+.theme-toggle {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+#theme-btn {
+  background: transparent;
+  border: none;
+  font-size: 1.6rem;
+  cursor: pointer;
+  color: var(--header-text);
+  transition: transform 0.2s;
+}
+
+#theme-btn:hover {
+  transform: scale(1.2);
+}
+
+section {
+  background: var(--card-bg);
+  border-radius: 8px;
+  padding: 2rem;
+  margin: 2rem 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: background 0.3s;
+}
+
+section h2 {
+  color: var(--accent-color);
+  margin-bottom: 1rem;
+}
+
+/* Списки */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  padding: 0.3rem 0;
+}
+
+.contacts li {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.contacts a {
+  color: var(--accent-color);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.contacts a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: var(--footer-bg);
+  color: var(--footer-text);
+  font-size: 0.9rem;
+}
